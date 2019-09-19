@@ -1,0 +1,14 @@
+dasConfig:
+    admissionControlEnabled: true
+    enabled: true
+    failoverLevel: 1
+    defaultVmSettings:
+        isolationResponse: powerOff
+        restartPriority: high
+drsConfig:
+    enabled: true
+    defaultVmBehavior: fullyAutomated
+    vmotionRate: 4
+dpmConfig:
+    defaultDpmBehavior: manual
+    enabled: true

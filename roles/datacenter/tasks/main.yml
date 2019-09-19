@@ -1,0 +1,22 @@
+---
+# tasks file for datacenter
+# 
+- name: create datacenter
+  vcenter_datacenter:
+    dc_name: hello_world
+    state: present
+  register: output
+
+- name: create datacenter output
+  debug:
+    msg: '{{ output }}'
+
+# - name: delete datacenter
+#   vc_datacenter:
+#     dc_name: hello_world
+#     state: absent
+#   register: output
+
+# - name: delete datacenter output
+#   debug:
+#     msg: '{{ output }}'  

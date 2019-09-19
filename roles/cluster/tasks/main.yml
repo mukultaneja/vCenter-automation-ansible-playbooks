@@ -1,0 +1,37 @@
+---
+# tasks file for cluster
+
+- name: create cluster
+  vcenter_cluster:
+    dc_name: hello_world
+    cluster_name: hello_world_cluster
+    cluster_spec: /Users/mtaneja/Work/Projects/Mac/vc_ansible/specs/cluster_spec.yml
+    state: present
+  register: output
+
+- name: create cluster output
+  debug:
+    msg: '{{ output }}'
+
+- name: update cluster
+  vcenter_cluster:
+    dc_name: hello_world
+    cluster_name: hello_world_cluster
+    cluster_spec: /Users/mtaneja/Work/Projects/Mac/vc_ansible/specs/cluster_spec.yml
+    state: update
+  register: output
+
+- name: update cluster output
+  debug:
+    msg: '{{ output }}'
+
+- name: delete cluster
+  vcenter_cluster:
+    dc_name: hello_world
+    cluster_name: hello_world_cluster
+    state: absent
+  register: output
+
+- name: delete cluster output
+  debug:
+    msg: '{{ output }}'

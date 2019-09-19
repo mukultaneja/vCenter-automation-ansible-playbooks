@@ -1,0 +1,14 @@
+
+---
+- name: vCenterAnsible
+  hosts: localhost
+  remote_user: mtaneja
+  environment:
+    env_user: administrator@vsphere.local
+    env_password: VMware123!
+    env_host: vcmb.lab.vmw
+    env_port: 443
+
+  roles:
+      - datacenter
+      - cluster
