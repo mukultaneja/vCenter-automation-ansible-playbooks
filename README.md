@@ -7,7 +7,7 @@ vCenter-automation-ansible-playbooks is a collection of ansible roles and playbo
 
 ### Prerequisites
 
-* [ansible-modules-vCenter-automation](https://github.com/mukultaneja/ansible-modules-vCenter-automation). 
+* [ansible-modules-vCenter-automation](https://github.com/mukultaneja/ansible-modules-vCenter-automation)
 
 ### Build & Run
 
@@ -16,7 +16,7 @@ vCenter-automation-ansible-playbooks is a collection of ansible roles and playbo
 
 ## Documentation
 
-Refer to [docs]([docs](https://github.com/mukultaneja/ansible-modules-vCenter-automation/tree/master/docs) to know more about modules and available params for them.
+Refer to [docs](https://github.com/mukultaneja/ansible-modules-vCenter-automation/tree/master/docs) to know more about modules and available params for them.
 
 ## Contributing
 
