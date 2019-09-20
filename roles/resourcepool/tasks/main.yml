@@ -12,3 +12,13 @@
 - name: create resource pool output
   debug:
     msg: '{{ output }}'
+
+- name: delete resource pool
+  vcenter_resource_pool:
+    resource_pool_name: hello_world_resource_pool
+    state: absent
+  register: output
+
+- name: delete resource pool output
+  debug:
+    msg: '{{ output }}'
