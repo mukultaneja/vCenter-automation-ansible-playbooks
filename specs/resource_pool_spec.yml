@@ -1,0 +1,13 @@
+changeVersion: "1"
+cpuAllocation:
+  expandableReservation: true
+  limit: -1
+  reservation: 0
+  shares:
+    level: normal
+memoryAllocation:
+  expandableReservation: true
+  limit: -1
+  reservation: 0
+  shares:
+    level: normal

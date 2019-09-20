@@ -1,0 +1,14 @@
+---
+# tasks file for resourcepool
+# 
+- name: create resource pool
+  vcenter_resource_pool:
+    cluster_name: hello_world_cluster
+    resource_pool_name: hello_world_resource_pool
+    resource_pool_spec: /Users/mtaneja/Work/Projects/Mac/vCenter-automation-ansible-playbooks/specs/resource_pool_spec.yml
+    state: present
+  register: output
+
+- name: create resource pool output
+  debug:
+    msg: '{{ output }}'

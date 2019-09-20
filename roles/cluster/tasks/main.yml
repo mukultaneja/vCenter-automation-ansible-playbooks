@@ -5,7 +5,7 @@
   vcenter_cluster:
     dc_name: hello_world
     cluster_name: hello_world_cluster
-    cluster_spec: /Users/mtaneja/Work/Projects/Mac/vc_ansible/specs/cluster_spec.yml
+    cluster_spec: /Users/mtaneja/Work/Projects/Mac/vCenter-automation-ansible-playbooks/specs/cluster_spec.yml
     state: present
   register: output
 
@@ -17,7 +17,7 @@
   vcenter_cluster:
     dc_name: hello_world
     cluster_name: hello_world_cluster
-    cluster_spec: /Users/mtaneja/Work/Projects/Mac/vc_ansible/specs/cluster_spec.yml
+    cluster_spec: /Users/mtaneja/Work/Projects/Mac/vCenter-automation-ansible-playbooks/specs/cluster_spec.yml
     state: update
   register: output
 
@@ -25,13 +25,13 @@
   debug:
     msg: '{{ output }}'
 
-- name: delete cluster
-  vcenter_cluster:
-    dc_name: hello_world
-    cluster_name: hello_world_cluster
-    state: absent
-  register: output
+# - name: delete cluster
+#   vcenter_cluster:
+#     dc_name: hello_world
+#     cluster_name: hello_world_cluster
+#     state: absent
+#   register: output
 
-- name: delete cluster output
-  debug:
-    msg: '{{ output }}'
+# - name: delete cluster output
+#   debug:
+#     msg: '{{ output }}'

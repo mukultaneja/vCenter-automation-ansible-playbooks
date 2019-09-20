@@ -5,10 +5,11 @@
   remote_user: mtaneja
   environment:
     env_user: administrator@vsphere.local
-    env_password: VMware123!
-    env_host: vcmb.lab.vmw
+    env_password: Admin!23
+    env_host: 10.161.67.145
     env_port: 443
 
   roles:
       - datacenter
       - cluster
+      - resourcepool
